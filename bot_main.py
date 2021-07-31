@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == "a":
-        await message.channel.send("a")
+        await message.channel.send("b")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
